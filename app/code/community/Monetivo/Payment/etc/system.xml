@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <payment>
+            <groups>
+                <monetivo_payment translate="label comment" module="monetivo_payment">
+                    <label>Monetivo</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <active>1</active>
+                    <expanded>1</expanded>
+                    <frontend_class>complex</frontend_class>
+                    <fields>
+                        <logo>
+                            <label>Information</label>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>monetivo-information</frontend_class>
+                            <frontend_model>monetivo_payment/adminhtml_system_config_field_logo</frontend_model>
+                            <fields />
+                        </logo>
+                        <information type="group">
+                            <label>Informacje</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>monetivo_payment/adminhtml_system_config_fieldset_expanded</frontend_model>
+                            <fields>
+                                <information_text>
+                                    <label>Text</label>
+                                    <sort_order>0</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                    <frontend_model>monetivo_payment/adminhtml_system_config_fieldset_information</frontend_model>
+                                </information_text>
+                            </fields>
+                        </information>
+                        <required_fields type="group" translate="label">
+                            <label>Główne ustawienia</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>monetivo_payment/adminhtml_system_config_fieldset_expanded</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <fields>
+                                <active translate="label">
+                                    <label>Aktywuj płatność</label>
+                                    <frontend_type>select</frontend_type>
+                                    <source_model>adminhtml/system_config_source_yesno</source_model>
+                                    <config_path>payment/monetivo_payment/active</config_path>
+                                    <sort_order>10</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                </active>
+                                <app_token translate="label">
+                                    <label>Token APP</label>
+                                    <comment>Token aplikacji przyznany przez Monetivo</comment>
+                                    <config_path>payment/monetivo_payment/app_token</config_path>
+                                    <frontend_type>text</frontend_type>
+                                    <sort_order>80</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                </app_token>
+                                <login translate="label">
+                                    <label>Login</label>
+                                    <comment>Login przyznany przez Monetivo</comment>
+                                    <config_path>payment/monetivo_payment/login</config_path>
+                                    <frontend_type>text</frontend_type>
+                                    <sort_order>90</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                </login>
+                                <password translate="label">
+                                    <label>Hasło</label>
+                                    <comment>Hasło przyznane przez Monetivo</comment>
+                                    <config_path>payment/monetivo_payment/password</config_path>
+                                    <frontend_type>obscure</frontend_type>
+                                    <sort_order>100</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                </password>
+                            </fields>
+                        </required_fields>
+                        <visual_settings type="group" translate="label">
+                            <label>Ustawienia wizualne</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>monetivo_payment/adminhtml_system_config_fieldset_expanded</frontend_model>
+                            <sort_order>101</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <ec_separator>1</ec_separator>
+                            <fields>
+                                <displayname translate="label">
+                                    <label>Nazwa płatności</label>
+                                    <config_path>payment/monetivo_payment/displayname</config_path>
+                                    <comment>Nazwa wyświetlana w sekcji wyboru metody płatności</comment>
+                                    <frontend_type>text</frontend_type>
+                                    <sort_order>102</sort_order>
+                                    <show_in_default>1</show_in_default>
+                                    <show_in_website>1</show_in_website>
+                                    <show_in_store>1</show_in_store>
+                                </displayname>
+                            </fields>
+                        </visual_settings>
+                    </fields>
+                </monetivo_payment>
+            </groups>
+        </payment>
+    </sections>
+</config>

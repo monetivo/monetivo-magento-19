@@ -1,0 +1,58 @@
+.monetivo-logo {
+    width: 157px;
+    height: 64px;
+    background: url(../../images/monetivo/mvo.png) no-repeat -5px -1px;
+}
+.monetivo-content > dt{
+    font-weight: 600;
+}
+.col-e-2{
+    width: 17%;
+}
+.col-e-4{
+    width: 33%;
+}
+.col-e-2, .col-e-4{
+    float: left;
+}
+.m-button{
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.42857;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #00aff0 none;
+    border: 1px solid #2eacce;
+    color: #fff;
+    text-transform: uppercase;
+    width: 140px;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.m-button:hover{
+    background-color: #008abd;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.m-login {
+    color: #00aff0;
+    text-decoration: none;
+}
+
+.m-login:hover{
+    color: #0077a4;
+    text-decoration: underline;
+}

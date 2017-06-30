@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Layout>
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <name>css/monetivo/admin.css</name>
+            </action>
+        </reference>
+    </default>
+</Layout>
